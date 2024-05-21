@@ -1,0 +1,20 @@
+.container {
+  max-width: 1170px;
+  margin-inline: 1rem;
+
+  @include min-width(768px) {
+    margin-inline: 1.5rem;
+  }
+
+  @include min-width(1200px) {
+    margin-inline: auto;
+  }
+}
+
+.section {
+  margin-top: 6.25rem;
+}
+
+.main {
+  overflow: hidden;
+}

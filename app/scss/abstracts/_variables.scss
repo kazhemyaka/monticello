@@ -1,0 +1,54 @@
+:root {
+  --first-gradient: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  --second-gradient: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  --third-gradient: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+
+  --blue-color: hsla(205, 100%, 67%, 1);
+  --purple-color: hsla(253, 100%, 68%, 1);
+  --white-color: hsla(0, 0%, 100%, 1);
+  --text-color: hsla(213, 33%, 26%, 1);
+  --ex-text-color: hsla(0, 0%, 0%, 1);
+  --muted-color: hsla(214, 13%, 34%, 1);
+
+  --source-sans-pro: 'Source Sans Pro', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+
+  --h1-size: 3rem; // 48px
+  --h2-size: 1.75rem; // 28px
+  --h3-size: 1.1rem; // 18px
+  --normal-size: 0.975rem; // 16px
+  --ex-small-size: 0.838rem; // 14px
+  --small-size: 0.75rem; // 12px
+
+  @media screen and (min-width: 1170px) {
+    --h1-size: 5rem; // 80px
+    --h2-size: 2.75rem; // 44px
+    --h3-size: 1.375rem; // 22px
+    --normal-size: 1.125rem; // 18px
+    --ex-small-size: 0.938rem; // 15px
+    --small-size: 0.875rem; // 14px
+  }
+}
+
+$first-gradient: var(--first-gradient);
+$second-gradient: var(--second-gradient);
+$third-gradient: var(--third-gradient);
+
+$blue-color: var(--blue-color);
+$purple-color: var(--purple-color);
+$white-color: var(--white-color);
+$text-color: var(--text-color);
+$ex-text-color: var(--ex-text-color);
+$muted-color: var(--muted-color);
+
+$source-sans-pro: var(--source-sans-pro);
+$montserrat: var(--montserrat);
+$open-sans: var(--open-sans);
+
+$h1-size: var(--h1-size);
+$h2-size: var(--h2-size);
+$h3-size: var(--h3-size);
+$normal-size: var(--normal-size);
+$ex-small-size: var(--ex-small-size);
+$small-size: var(--small-size);

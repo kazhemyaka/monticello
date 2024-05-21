@@ -1,8 +1,14 @@
-@import './general/vars';
-@import './general/fonts';
-@import './general/normalize';
-@import './general/libs';
-@import './general/global';
+@import 'abstracts/fonts';
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
 
+@import 'components/buttons';
 
-@import './body/header';
+@import 'base/normalize';
+@import 'base/reset';
+@import 'base/config';
+
+@import 'layout/header';
+@import 'layout/home';
+@import 'layout/footer';
