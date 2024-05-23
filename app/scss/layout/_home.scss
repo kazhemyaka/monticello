@@ -67,15 +67,13 @@
     }
 
     &__point {
+      cursor: pointer;
       width: 0.625rem;
       height: 0.625rem;
       border-radius: 0.625rem;
       border: 0.0625rem, solid, $white-color;
 
       &:hover {
-        width: 0.5625rem;
-        height: 0.5625rem;
-        border-radius: 0.625rem;
         background-color: $white-color;
       }
     }

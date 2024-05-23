@@ -72,6 +72,7 @@
   &__social {
     display: flex;
     gap: 1.25rem;
+    z-index: 10;
     @include max-width(63.9375rem) {
       display: none;
       position: fixed;
@@ -95,21 +96,18 @@
       right: 0;
       left: 0;
       bottom: 0;
-
-      background-color: #7e5aff; //gradient?
+      z-index: 10;
+      background: $first-gradient;
 
       &.open {
         display: flex;
-      }
-      &.open .header__item:hover:after {
-        content: '';
-        display: none;
       }
     }
   }
 
   &__burger {
     display: none;
+    z-index: 10;
     @include max-width(63.9375rem) {
       display: block;
       padding-right: 0.25rem;
@@ -147,6 +145,10 @@
   width: 2.5rem;
   border-radius: 2.5rem;
   border: 0.0625rem, solid, rgb(255, 255, 255, 0.4);
+  &:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 0.0625rem, solid, $white-color;
+  }
 }
 
 .social_icon {
