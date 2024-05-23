@@ -1,48 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+    <title>Monticello</title>
 
-  <title>Monticello</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js"></script>
-</head>
-
-<body>
-  <header class="header">
-
-  </header>
-
-  <main class="main">
-    <section class="container section home">
-
-      <!-- Slider container -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <div class="icon logo">
+            <img src="images/Logo.png" alt="logo" />
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <div class="swiper-scrollbar"></div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#home">ABOUT US</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#operations">PROJECTS</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">NEWS</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__social social">
+          <div class="social_item">
+            <svg class="icon social_icon">
+              <use xlink:href="images/svg/sprite.svg#fb"></use>
+            </svg>
+          </div>
+          <div class="social_item">
+            <svg class="icon social_icon">
+              <use xlink:href="images/svg/sprite.svg#x"></use>
+            </svg>
+          </div>
+          <div class="social_item">
+            <svg class="icon social_icon">
+              <use xlink:href="images/svg/sprite.svg#ig"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="header__burger">
+          <span class="header__burger__item"></span>
+          <span class="header__burger__item"></span>
+          <span class="header__burger__item"></span>
+        </div>
       </div>
+    </header>
 
-    </section>
-  </main>
+    <main class="main">
+      <div class="banner" id="home">
+        <img
+          class="banner__image"
+          src="images/webp/hero.webp"
+          alt="background"
+        />
+      </div>
+      <section class="container section home">
+        <div class="home__main">
+          <h1 class="home__title">SIMPLE & MODERN</h1>
+          <p class="home__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          <a class="arrow__link" href="#operations">
+            <div class="home__arrow arrow">
+              <svg class="icon icon_arrow">
+                <use xlink:href="images/svg/sprite.svg#arrow"></use>
+              </svg></div
+          ></a>
+        </div>
+        <div class="home__slider slider">
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+        </div>
+      </section>
+      <section class="operations container" id="operations">
+        <h2 class="title">WHAT WE DO</h2>
+        <div class="operations__block block_1">
+          <img
+            class="operations__img img_trade-center"
+            src="images/webp/what_we_do-1.webp"
+            alt="New York City futuristic building"
+          />
+          <div class="operations__copy">
+            <p class="operations__subtitle">ONE WORLD</p>
+            <h2 class="operations__title">TRADE CENTER</h2>
+            <p class="operations__text text">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="operations__button button">MORE DETAILS</button>
+            <div class="operations__location">
+              <svg class="icon operations__pin">
+                <use xlink:href="images/svg/sprite.svg#pin"></use>
+              </svg>
+              <p class="operations__location_text">
+                New York City, United States - 1776 feet
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="operations__block block_2">
+          <div class="operations__copy">
+            <p class="operations__subtitle">INTERNATIONAL</p>
+            <h2 class="operations__title">COMMERCE CENTRE</h2>
+            <p class="operations__text text">
+              Successful businesses have many things in common, today we’ll look
+              at the big ‘R’ of recognition and how a digital advertising
+              network may help.
+            </p>
+            <button class="operations__button button">MORE DETAILS</button>
+            <div class="operations__location">
+              <svg class="icon operations__pin">
+                <use xlink:href="images/svg/sprite.svg#pin"></use>
+              </svg>
+              <p class="operations__location_text">Hong Kong - 1588 feet</p>
+            </div>
+          </div>
+          <img
+            class="operations__img img_commerce-center"
+            src="images/webp/what_we_do-2.webp"
+            alt="Hong Kong old building"
+          />
+        </div>
+      </section>
+    </main>
 
-  <footer class="footer">
-
-  </footer>
-</body>
-
+    <footer class="footer"></footer>
+    <script>
+      document
+        .querySelector('.header__burger')
+        .addEventListener('click', function () {
+          this.classList.toggle('active');
+          document.querySelector('.header__nav').classList.toggle('open');
+          document.querySelector('.header__social').classList.toggle('open');
+        });
+    </script>
+  </body>
 </html>

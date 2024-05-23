@@ -1,0 +1,137 @@
+.operations {
+  padding-top: 6.25rem;
+  padding-bottom: 9.375rem;
+  @include max-width(63.9375rem) {
+    padding-top: 3.8rem;
+    padding-bottom: 4.375rem;
+  }
+
+  &__block {
+    display: flex;
+    gap: 4.375rem;
+    align-items: end;
+    @include max-width(63.9375rem) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+
+  &__subtitle {
+    color: $text-color;
+    font-family: $montserrat;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include max-width(63.9375rem) {
+      font-size: 1.125rem;
+    }
+  }
+  &__title {
+    @include max-width(63.9375rem) {
+      padding-top: 4px;
+    }
+  }
+
+  &__text {
+    padding-top: 1rem;
+    color: $text-color;
+    font-family: $open-sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    @include max-width(63.9375rem) {
+      font-size: 1rem;
+      line-height: 1.625rem;
+    }
+  }
+
+  &__location {
+    padding-bottom: 1.8rem;
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+
+    &_text {
+      color: $ex-text-color;
+      font-family: $open-sans;
+      font-size: 0.9375rem;
+      font-style: italic;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__pin {
+    width: 0.5357rem;
+    height: 0.8036rem;
+    fill: $text-color;
+  }
+  &__button {
+    margin-top: 2rem;
+    margin-bottom: 3.75rem;
+    @include max-width(63.9375rem) {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    @include max-width(63.9375rem) {
+      width: 100%;
+      height: 17.75rem;
+      object-fit: cover;
+    }
+  }
+}
+
+.title {
+  text-align: center;
+  padding-bottom: 9rem;
+  @include max-width(63.9375rem) {
+    padding-bottom: 2.8rem;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 6.25rem;
+    height: 0.0625rem;
+    background: $text-color;
+    margin: 0 auto;
+    margin-bottom: 1.875rem;
+    @include max-width(63.9375rem) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.block_1 {
+  padding-bottom: 11.0625rem;
+  @include max-width(63.9375rem) {
+    padding-bottom: 1.2rem;
+  }
+}
+.block_2 {
+  gap: 4rem;
+  @include max-width(63.9375rem) {
+    flex-direction: column-reverse;
+    gap: 1.6rem;
+  }
+}
+
+.img_trade-center {
+  filter: drop-shadow(-13.4375rem -3.5625rem 0rem $blue-color);
+  @include max-width(63.9375rem) {
+    filter: drop-shadow(-1rem -1rem 0rem $blue-color);
+  }
+}
+
+.img_commerce-center {
+  filter: drop-shadow(13.4375rem -3.5625rem 0rem $purple-color);
+  @include max-width(63.9375rem) {
+    filter: drop-shadow(1rem -1rem 0rem $purple-color);
+  }
+}
