@@ -13,6 +13,7 @@ html {
 body {
   width: 100%;
   min-width: 220px;
+  color: $text-color;
   @include font($source-sans-pro, $normal-size, 400, 1.6, normal);
 }
 
@@ -25,7 +26,7 @@ h2 {
 }
 
 h3 {
-  @include font($montserrat, $h3-size, 400, 1.4, normal);
+  @include font($montserrat, $h3-size, 700, 1.4, normal);
 }
 
 p {
