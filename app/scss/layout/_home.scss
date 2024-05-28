@@ -89,6 +89,8 @@
   width: 2.5rem;
   border-radius: 2.5rem;
   border: 0.0625rem, solid, rgb(255, 255, 255, 0.7);
+  transition: ease-in-out 0.3s;
+
   &:hover {
     background-color: rgb(255, 255, 255, 0.2);
 
