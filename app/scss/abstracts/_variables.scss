@@ -1,7 +1,7 @@
 :root {
-  --first-gradient: linear-gradient(243.43deg, #7E5AFF 16.9%, #55B7FF 83.27%);
-  --second-gradient: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
-  --third-gradient: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+  --first-gradient: linear-gradient(243.43deg, #7e5aff 16.9%, #55b7ff 83.27%);
+  --second-gradient: linear-gradient(237.1deg, #24ccfa 11.16%, #3c7fd4 89.18%);
+  --third-gradient: linear-gradient(251.06deg, #7e5aff -2.19%, #55b7ff 103.21%);
 
   --blue-color: hsla(205, 100%, 67%, 1);
   --purple-color: hsla(253, 100%, 68%, 1);
@@ -10,13 +10,13 @@
   --ex-text-color: hsla(0, 0%, 0%, 1);
   --muted-color: hsla(214, 13%, 34%, 1);
 
-  --source-sans-pro: 'Source Sans Pro', sans-serif;
-  --montserrat: 'Montserrat', sans-serif;
-  --open-sans: 'Open Sans', sans-serif;
+  --source-sans-pro: "Source Sans Pro", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
 
   --h1-size: 3rem; // 48px
   --h2-size: 1.75rem; // 28px
-  --h3-size: 1.1rem; // 18px
+  --h3-size: 1.25rem; // 20px
   --normal-size: 0.975rem; // 16px
   --ex-small-size: 0.838rem; // 14px
   --small-size: 0.75rem; // 12px

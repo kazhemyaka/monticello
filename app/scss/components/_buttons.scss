@@ -1,0 +1,27 @@
+.button {
+  cursor: pointer;
+  background-color: $white-color;
+  width: 11.875rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border: 0.0625rem solid $text-color;
+  color: $ex-text-color;
+  font-family: $montserrat;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+
+  &:hover {
+    background-color: $blue-color;
+    border: 0.0625rem solid $blue-color;
+    color: $white-color;
+    box-shadow: 0px 4px 14.1px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  @include max-width(48rem) {
+    width: 9.47475rem;
+    height: 3.125rem;
+  }
+}

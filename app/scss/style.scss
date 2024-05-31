@@ -1,14 +1,17 @@
-@import 'abstracts/fonts';
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import "abstracts/fonts";
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
 
-@import 'components/buttons';
+@import "components/buttons";
 
-@import 'base/normalize';
-@import 'base/reset';
-@import 'base/config';
+@import "base/normalize";
+@import "base/reset";
+@import "base/config";
 
-@import 'layout/header';
-@import 'layout/home';
-@import 'layout/footer';
+@import "layout/header";
+@import "layout/home";
+@import "layout/footer";
+@import "layout/operations";
+@import "layout/news";
+@import "layout/gallery";

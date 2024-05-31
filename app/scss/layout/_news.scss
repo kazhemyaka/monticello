@@ -1,0 +1,198 @@
+.news {
+  padding-block: 7.5rem;
+  background: url("../../images/webp/city.webp") no-repeat bottom / contain,
+    $second-gradient;
+
+  @include max-width(48rem) {
+    padding-block: 4.37rem 3.3rem;
+  }
+
+  &__title {
+    padding-bottom: 5.35rem;
+
+    @include max-width(48rem) {
+      padding-bottom: 2.7rem;
+    }
+  }
+
+  &__cards {
+    padding-bottom: 3.188rem;
+    max-width: 1170px;
+    margin-inline: auto;
+
+    @include max-width(48rem) {
+      overflow: visible;
+      padding-bottom: 4.375rem;
+    }
+  }
+
+  &__card {
+    background: $white-color;
+    max-width: 370px;
+    margin-inline: calc(1.87rem / 2);
+    min-height: 514px;
+    display: flex;
+    flex-direction: column;
+
+    @include max-width(48rem) {
+      max-width: 316px;
+      margin-inline: 0 1rem;
+    }
+  }
+
+  &__container {
+    position: relative;
+    max-width: 1370px;
+
+    @include max-width(87.5rem) {
+      max-width: 1170px;
+    }
+  }
+}
+
+.title {
+  &.title--white {
+    color: $white-color;
+
+    &::before {
+      background: $white-color;
+    }
+  }
+}
+
+.card {
+  &__text {
+    padding: 1.458rem 1.25rem 1.875rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    @include max-width(48rem) {
+      padding: 1.88rem 1.25rem;
+    }
+  }
+
+  &__title-and-description {
+    flex: 1;
+  }
+
+  &__title {
+    line-height: normal;
+    margin-bottom: 0.6rem;
+
+    @include max-width(48rem) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__image {
+    @include max-width(48rem) {
+      height: 240px;
+    }
+  }
+
+  &__author {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  &__author-name {
+    @include font($montserrat, 1.125rem, 400, 1.5, normal);
+  }
+
+  &__date {
+    @include font($montserrat, 1.125rem, 400, 1.5, normal);
+  }
+
+  &__author-photo {
+    border-radius: 50%;
+  }
+
+  &__date {
+    color: $blue-color;
+    font-size: 0.875rem;
+  }
+
+  &__description {
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @include max-width(768px) {
+      -webkit-line-clamp: 3;
+    }
+  }
+}
+
+.swiper {
+  &-button {
+    &-next,
+    &-prev {
+      border: 1px solid $white-color;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      transform: translateY(160%);
+      transition: ease-in-out 0.3s;
+
+      &::after {
+        line-height: 0;
+        transform: translateY(-3px);
+      }
+
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.2);
+
+        border: 0.0625rem, solid, $white-color;
+      }
+
+      @include max-width(1400px) {
+        top: auto;
+        transform: translateY(-15%);
+      }
+    }
+
+    &-prev {
+      left: 0;
+
+      &::after {
+        content: url("../../images/svg/arrow-1.svg");
+      }
+    }
+
+    &-next {
+      right: 0;
+
+      &::after {
+        content: url("../../images/svg/arrow-2.svg");
+      }
+    }
+  }
+
+  &-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    transform: translateY(80%);
+
+    @include max-width(768px) {
+      gap: 15px;
+    }
+
+    &-bullet {
+      background-color: transparent;
+      border: 1px solid $white-color;
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+
+      &-active {
+        background-color: $white-color;
+      }
+    }
+  }
+}
