@@ -19,21 +19,25 @@ const newsSwiper = new Swiper(".news__cards", {
 const popup = document.querySelector(".gallery__popup");
 const popupImage = popup.querySelector(".gallery__popup-img");
 const popupClose = popup.querySelector(".gallery__popup-close");
+const galleryItems = document.querySelectorAll(".gallery__item");
 
-document.querySelectorAll(".gallery__item").forEach((item) => {
+galleryItems.forEach((item) => {
   item.addEventListener("click", () => {
     popupImage.src = item.querySelector("img").src;
     popupImage.alt = item.querySelector("img").alt;
     popup.style.display = "flex";
+    popup.classList.add("open");
   });
 });
 
 popupClose.addEventListener("click", () => {
   popup.style.display = "none";
+  popup.classList.remove("open");
 });
 
 popup.addEventListener("click", (event) => {
   if (event.target !== popupImage) {
     popup.style.display = "none";
   }
+  popup.classList.remove("open");
 });

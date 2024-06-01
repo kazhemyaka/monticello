@@ -38,18 +38,18 @@
     align-items: center;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 0.5625rem;
       height: 0.5625rem;
       border-radius: 0.625rem;
-      border: 0.0625rem, solid, $white-color;
+      border: 0.0625rem solid $white-color;
       @include max-width(63.9375rem) {
         display: none;
       }
     }
     &:hover::before {
-      content: '';
+      content: "";
       width: 0.5625rem;
       height: 0.5625rem;
       border-radius: 0.625rem;
@@ -60,7 +60,7 @@
   &__link {
     text-decoration: none;
     color: $white-color;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -144,10 +144,10 @@
   height: 2.5rem;
   width: 2.5rem;
   border-radius: 2.5rem;
-  border: 0.0625rem, solid, rgb(255, 255, 255, 0.4);
+  border: 0.0625rem solid rgb(255, 255, 255, 0.4);
   &:hover {
     background-color: rgb(255, 255, 255, 0.2);
-    border: 0.0625rem, solid, $white-color;
+    border: 0.0625rem solid $white-color;
   }
 }
 

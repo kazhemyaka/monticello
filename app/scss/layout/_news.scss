@@ -131,7 +131,7 @@
   &-button {
     &-next,
     &-prev {
-      border: 1px solid $white-color;
+      border: 0.0625rem solid $white-color;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -146,7 +146,7 @@
       &:hover {
         background-color: rgb(255, 255, 255, 0.2);
 
-        border: 0.0625rem, solid, $white-color;
+        border: 0.0625rem solid $white-color;
       }
 
       @include max-width(1400px) {
@@ -191,6 +191,10 @@
       opacity: 1;
 
       &-active {
+        background-color: $white-color;
+      }
+
+      &:hover {
         background-color: $white-color;
       }
     }
