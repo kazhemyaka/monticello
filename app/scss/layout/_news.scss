@@ -1,6 +1,6 @@
 .news {
   padding-block: 7.5rem;
-  background: url("/images/webp/city.webp") no-repeat bottom / contain,
+  background: url("/app/images/webp/city.webp") no-repeat bottom / contain,
     $second-gradient;
 
   @include max-width(48rem) {
@@ -159,7 +159,7 @@
       left: 0;
 
       &::after {
-        content: url("/images/svg/arrow-1.svg");
+        content: url("/app/images/svg/arrow-1.svg");
       }
     }
 
@@ -167,7 +167,7 @@
       right: 0;
 
       &::after {
-        content: url("/images/svg/arrow-2.svg");
+        content: url("/app/images/svg/arrow-2.svg");
       }
     }
   }
