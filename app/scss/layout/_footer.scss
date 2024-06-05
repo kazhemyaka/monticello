@@ -1,0 +1,72 @@
+.footer {
+  position: relative;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 4.375rem 0;
+
+    @include min-width(768px) {
+      max-width: 770px;
+      align-items: initial;
+      text-align: initial;
+      height: 550px;
+    }
+  }
+
+  &__content {
+    @include min-width(768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $third-gradient;
+    z-index: -2;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 2.5rem 0;
+
+    a {
+      display: flex;
+      align-items: center;
+
+      svg {
+        transform: translateX(1px);
+      }
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__copyright {
+    @include font($montserrat, $small-size);
+    color: $white-color;
+
+    @include min-width(768px) {
+      padding-top: 1.5rem;
+    }
+  }
+}
