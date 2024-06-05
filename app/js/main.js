@@ -1,3 +1,11 @@
+document
+  .querySelector(".header__burger")
+  .addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".header__nav").classList.toggle("open");
+    document.querySelector(".header__social").classList.toggle("open");
+  });
+
 const newsSwiper = new Swiper(".news__cards", {
   slidesPerView: "auto",
   centeredSlides: true,
