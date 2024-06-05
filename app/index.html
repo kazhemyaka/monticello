@@ -301,35 +301,43 @@
       <a href="" class="button gallery__button">SEE MORE</a>
     </section>
 
-    <section class="contact section">
-      <div class="contact__container">
-        <div class="contact__map">
+    <section class="map section">
+      <div class="map__container">
+        <div class="map__content">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094275!2d144.96315731531678!3d-37.81410797975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b66ed9ff7f06!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1610074187944!5m2!1sen!2sau"
             allowfullscreen="" loading="lazy">
           </iframe>
         </div>
+      </div>
+    </section>
 
-        <div class="container contact__content">
-          <h2 class="title contact__title">GET IN TOUCH</h2>
-          <ul>
-            <li>
+    <section class="contact section">
+      <div class="container contact__container">
+        <h2 class="title contact__title">GET IN TOUCH</h2>
+        <div class="contact__content">
+          <ul class="contact__items">
+            <li class="contact__item">
+              <img src="images/svg/location.svg" alt="location icon">
               <a href="#">91 Nolan Extensions Suite 670</a>
             </li>
-            <li>
-              <a href="#">+001 356-868-2454</a>
+            <li class="contact__item">
+              <img src="images/svg/phone.svg" alt="phone icon">
+              <a href="+001 356-868-2454">+001 356-868-2454</a>
             </li>
-            <li>
-              <a href="#">montichello@service.com</a>
+            <li class="contact__item">
+              <img src="images/svg/mail.svg" alt="mail icon">
+              <a href="montichello@service.com">montichello@service.com</a>
             </li>
-            <li>
+            <li class="contact__item">
+              <img src="images/svg/watch.svg" alt="watch icon">
               <span>From 07:05AM to 19:30PM</span>
             </li>
           </ul>
-          <form>
-            <input type="text" class="" placeholder="Mollie Medina">
-            <input type="email" class="" placeholder="Email">
-            <button type="submit" class="">Submit</button>
+          <form class="contact__form">
+            <input type="text" class="contact__input" placeholder="Mollie Medina">
+            <input type="email" class="contact__input" placeholder="Email">
+            <button type="submit" class="button contact__button">Submit</button>
           </form>
         </div>
     </section>
