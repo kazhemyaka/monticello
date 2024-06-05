@@ -9,16 +9,19 @@
     text-align: center;
     padding: 4.375rem 0;
 
-    @include min-width(768px) {
-      max-width: 770px;
+    @include min-width(1200px) {
       align-items: initial;
       text-align: initial;
       height: 550px;
     }
+
+    @include min-width(1200px) {
+      max-width: 770px;
+    }
   }
 
   &__content {
-    @include min-width(768px) {
+    @include min-width(1200px) {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -65,7 +68,7 @@
     @include font($montserrat, $small-size);
     color: $white-color;
 
-    @include min-width(768px) {
+    @include min-width(1200px) {
       padding-top: 1.5rem;
     }
   }
