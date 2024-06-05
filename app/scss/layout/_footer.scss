@@ -1,6 +1,13 @@
 .footer {
   position: relative;
 
+  &.section {
+    @include min-width(1200px) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   &__container {
     display: flex;
     align-items: center;
