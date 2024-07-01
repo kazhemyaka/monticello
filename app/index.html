@@ -1,376 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <title>Monticello - simple & modern</title>
+    <meta name="description" content="We make the world beautiful everyday" />
 
-  <title>Monticello</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Monticello - simple & modern" />
+    <meta
+      property="og:url"
+      content="https://kazhemyaka.github.io/monticello/app/"
+    />
+    <meta
+      property="og:image"
+      content="https://kazhemyaka.github.io/monticello/app/images/webp/what_we_do-1.webp"
+    />
+    <meta
+      property="og:description"
+      content="We make the world beautiful everyday"
+    />
 
-  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="js/main.js"></script>
-</head>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="kazhemyaka.github.io" />
+    <meta
+      property="twitter:url"
+      content="https://kazhemyaka.github.io/monticello/app/"
+    />
+    <meta name="twitter:title" content="Monticello - simple & modern" />
+    <meta
+      name="twitter:description"
+      content="We make the world beautiful everyday"
+    />
+    <meta
+      name="twitter:image"
+      content="https://kazhemyaka.github.io/monticello/app/images/webp/what_we_do-1.webp"
+    />
 
-<body>
-  <header class="header">
-    <div class="header__container container">
-      <div class="header__logo">
-        <div class="icon logo">
-          <a href="#home"> <img src="images/Logo.png" alt="logo" /> </a>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <div class="icon logo">
+            <a href="#home"> <img src="images/Logo.png" alt="logo" /> </a>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#home">ABOUT US</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#operations">PROJECTS</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#news">NEWS</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__social social">
+          <a href="#">
+            <div class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#fb"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#x"></use>
+              </svg>
+            </div>
+          </a>
+          <a href="#">
+            <div class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#ig"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="header__burger">
+          <span class="header__burger__item"></span>
+          <span class="header__burger__item"></span>
+          <span class="header__burger__item"></span>
         </div>
       </div>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__item">
-            <a class="header__link" href="#home">ABOUT US</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#operations">PROJECTS</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#news">NEWS</a>
-          </li>
-          <li class="header__item">
-            <a class="header__link" href="#">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__social social">
-        <a href="#">
-          <div class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#fb"></use>
-            </svg>
-          </div>
-        </a>
-        <a href="#">
-          <div class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#x"></use>
-            </svg>
-          </div>
-        </a>
-        <a href="#">
-          <div class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#ig"></use>
-            </svg>
-          </div>
-        </a>
-      </div>
-      <div class="header__burger">
-        <span class="header__burger__item"></span>
-        <span class="header__burger__item"></span>
-        <span class="header__burger__item"></span>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <div class="banner" id="home">
-      <img class="banner__image" src="images/webp/hero.webp" alt="background" />
-    </div>
-    <section class="container section home">
-      <div class="home__main">
-        <h1 class="home__title">SIMPLE & MODERN</h1>
-        <p class="home__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
-        <a class="arrow__link" href="#operations">
-          <div class="home__arrow arrow">
-            <svg class="icon icon_arrow">
-              <use xlink:href="images/svg/sprite.svg#arrow"></use>
-            </svg>
-          </div>
-        </a>
+    <main class="main">
+      <div class="banner" id="home">
+        <img
+          class="banner__image"
+          src="images/webp/hero.webp"
+          alt="background"
+        />
       </div>
-      <div class="home__slider slider">
-        <div class="home__slider__point"></div>
-        <div class="home__slider__point"></div>
-        <div class="home__slider__point"></div>
-        <div class="home__slider__point"></div>
-        <div class="home__slider__point"></div>
-      </div>
-    </section>
+      <section class="container section home">
+        <div class="home__main">
+          <h1 class="home__title">SIMPLE & MODERN</h1>
+          <p class="home__text text">WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+          <a class="arrow__link" href="#operations">
+            <div class="home__arrow arrow">
+              <svg class="icon icon_arrow">
+                <use xlink:href="images/svg/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+        <div class="home__slider slider">
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+          <div class="home__slider__point"></div>
+        </div>
+      </section>
 
-    <section class="operations container" id="operations">
-      <h2 class="title">WHAT WE DO</h2>
-      <div class="operations__block block_1">
-        <img class="operations__img img_trade-center" src="images/webp/what_we_do-1.webp"
-          alt="New York City futuristic building" />
-        <div class="operations__copy">
-          <p class="operations__subtitle">ONE WORLD</p>
-          <h2 class="operations__title">TRADE CENTER</h2>
-          <p class="operations__text text">
-            Increasing prosperity in our lives can be accomplished by having
-            the right frame of mind. The truth is, our thoughts are very
-            powerful.
-          </p>
-          <button class="operations__button button">MORE DETAILS</button>
-          <div class="operations__location">
-            <svg class="icon operations__pin">
-              <use xlink:href="images/svg/sprite.svg#pin"></use>
-            </svg>
-            <a href="#" class="operations__location_text">
-              New York City, United States - 1776 feet
+      <section class="operations container" id="operations">
+        <h2 class="title">WHAT WE DO</h2>
+        <div class="operations__block block_1">
+          <img
+            class="operations__img img_trade-center"
+            src="images/webp/what_we_do-1.webp"
+            alt="New York City futuristic building"
+          />
+          <div class="operations__copy">
+            <p class="operations__subtitle">ONE WORLD</p>
+            <h2 class="operations__title">TRADE CENTER</h2>
+            <p class="operations__text text">
+              Increasing prosperity in our lives can be accomplished by having
+              the right frame of mind. The truth is, our thoughts are very
+              powerful.
+            </p>
+            <button class="operations__button button">MORE DETAILS</button>
+            <div class="operations__location">
+              <svg class="icon operations__pin">
+                <use xlink:href="images/svg/sprite.svg#pin"></use>
+              </svg>
+              <a href="#" class="operations__location_text">
+                New York City, United States - 1776 feet
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="operations__block block_2">
+          <div class="operations__copy">
+            <p class="operations__subtitle">INTERNATIONAL</p>
+            <h2 class="operations__title">COMMERCE CENTRE</h2>
+            <p class="operations__text text">
+              Successful businesses have many things in common, today we’ll look
+              at the big ‘R’ of recognition and how a digital advertising
+              network may help.
+            </p>
+            <button class="operations__button button">MORE DETAILS</button>
+            <div class="operations__location">
+              <svg class="icon operations__pin">
+                <use xlink:href="images/svg/sprite.svg#pin"></use>
+              </svg>
+              <a href="#" class="operations__location_text"
+                >Hong Kong - 1588 feet</a
+              >
+            </div>
+          </div>
+          <img
+            class="operations__img img_commerce-center"
+            src="images/webp/what_we_do-2.webp"
+            alt="Hong Kong old building"
+          />
+        </div>
+      </section>
+
+      <section class="news" id="news">
+        <div class="container news__container">
+          <h2 class="title title--white news__title">LATEST NEWS</h2>
+          <div class="news__cards swiper">
+            <div class="swiper-wrapper">
+              <article class="news__card swiper-slide">
+                <img
+                  src="images/webp/news-1.webp"
+                  alt="Fragment of a modern building featuring a combination of concrete and glass architectural elements."
+                  class="card__image"
+                />
+                <div class="card__text">
+                  <div class="card__title-and-description">
+                    <h3 class="card__title">
+                      SEE THE UNMATCHED BEAUTY OF THE GREAT.
+                    </h3>
+                    <p class="card__description">
+                      Free directories: directories are perfect for customers
+                      that are searching for...
+                    </p>
+                  </div>
+                  <div class="card__author">
+                    <img
+                      src="images/webp/author-1.webp"
+                      alt="Alja Brun"
+                      class="card__author-photo"
+                    />
+                    <div class="card__author-info">
+                      <p class="card__author-name">ALJA BRUN</p>
+                      <p class="card__date">20 Jan 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__card swiper-slide">
+                <img
+                  src="images/webp/news-2.webp"
+                  alt="Perspective view of a modern building with a grid-like facade against a clear blue sky."
+                  class="card__image"
+                />
+                <div class="card__text">
+                  <div class="card__title-and-description">
+                    <h3 class="card__title">EFFECTIVE ADVERTISING POINTERS.</h3>
+                    <p class="card__description">
+                      Having a home based business is a wonderful asset to your
+                      life...
+                    </p>
+                  </div>
+                  <div class="card__author">
+                    <img
+                      src="images/webp/author-2.webp"
+                      alt="Dominic Freeman"
+                      class="card__author-photo"
+                    />
+                    <div class="card__author-info">
+                      <p class="card__author-name">DOMINIC FREEMAN</p>
+                      <p class="card__date">13 Dec 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__card swiper-slide">
+                <img
+                  src="images/webp/news-3.webp"
+                  alt="Close-up of a modern building with a curved, white facade and horizontal lines."
+                  class="card__image"
+                />
+                <div class="card__text">
+                  <div class="card__title-and-description">
+                    <h3 class="card__title">
+                      HYPNOTIZE YOURSELF INTO THE GHOST.
+                    </h3>
+                    <p class="card__description">
+                      Free directories: directories are perfect for customers
+                      that are searching for...
+                    </p>
+                  </div>
+                  <div class="card__author">
+                    <img
+                      src="images/webp/author-3.webp"
+                      alt="Alice Ward"
+                      class="card__author-photo"
+                    />
+                    <div class="card__author-info">
+                      <p class="card__author-name">ALICE WARD</p>
+                      <p class="card__date">30 Nov 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__card swiper-slide">
+                <img
+                  src="images/webp/news-4.webp"
+                  alt="Modern building with a unique, wavy white facade and large windows."
+                  class="card__image"
+                />
+                <div class="card__text">
+                  <div class="card__title-and-description">
+                    <h3 class="card__title">
+                      MASTERING THE ART OF NETWORKING.
+                    </h3>
+                    <p class="card__description">
+                      Networking can open many doors for your business, but it
+                      requires skill...
+                    </p>
+                  </div>
+                  <div class="card__author">
+                    <img
+                      src="images/webp/author-3.webp"
+                      alt="Alice Ward"
+                      class="card__author-photo"
+                    />
+                    <div class="card__author-info">
+                      <p class="card__author-name">ALICE WARD</p>
+                      <p class="card__date">30 Nov 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="news__card swiper-slide">
+                <img
+                  src="images/webp/news-5.webp"
+                  alt="Contemporary building with a smooth, curved facade and extensive glass windows."
+                  class="card__image"
+                />
+                <div class="card__text">
+                  <div class="card__title-and-description">
+                    <h3 class="card__title">TIPS FOR YOUR PRODUCTIVITY.</h3>
+                    <p class="card__description">
+                      Increasing productivity can seem challenging, but with the
+                      right approach
+                    </p>
+                  </div>
+                  <div class="card__author">
+                    <img
+                      src="images/webp/author-3.webp"
+                      alt="Alice Ward"
+                      class="card__author-photo"
+                    />
+                    <div class="card__author-info">
+                      <p class="card__author-name">ALICE WARD</p>
+                      <p class="card__date">30 Nov 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+
+      <section class="gallery container gallery__container">
+        <h2 class="title gallery__title">GALLERY</h2>
+        <div class="gallery__items">
+          <div class="gallery__item gallery__item-1">
+            <img
+              src="images/avif/gallery-1.avif"
+              alt="Architectural detail of a modern building with a dynamic, wave-like facade design."
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery__item gallery__item-2">
+            <img
+              src="images/avif/gallery-2.avif"
+              alt="Close-up of a modern building featuring intricate, perforated panels and large glass windows."
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery__item gallery__item-3">
+            <img
+              src="images/avif/gallery-3.avif"
+              alt="Modern architectural structure with flowing, organic lines and expansive glass surfaces."
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery__item gallery__item-4">
+            <img
+              src="images/avif/gallery-4.avif"
+              alt="Innovative building design with a curved, layered facade and extensive use of glass."
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery__item gallery__item-5">
+            <img
+              src="images/avif/gallery-5.avif"
+              alt="Futuristic building with a sleek, curved design and reflective glass panels."
+              class="gallery__img"
+            />
+          </div>
+        </div>
+        <div class="gallery__popup">
+          <div class="gallery__popup-close">
+            <img src="images/svg/xmark-solid.svg" alt="Close" />
+          </div>
+          <img class="gallery__popup-img" src="images/webp/gallery-1.webp" />
+        </div>
+        <a href="" class="button gallery__button">SEE MORE</a>
+      </section>
+
+      <section class="map section">
+        <div class="map__container">
+          <div class="map__content">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094275!2d144.96315731531678!3d-37.81410797975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b66ed9ff7f06!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1610074187944!5m2!1sen!2sau"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section">
+        <div class="container contact__container">
+          <h2 class="title contact__title">GET IN TOUCH</h2>
+          <div class="contact__content">
+            <ul class="contact__items">
+              <li class="contact__item">
+                <img src="images/svg/location.svg" alt="location icon" />
+                <a href="#">91 Nolan Extensions Suite 670</a>
+              </li>
+              <li class="contact__item">
+                <img src="images/svg/phone.svg" alt="phone icon" />
+                <a href="+001 356-868-2454">+001 356-868-2454</a>
+              </li>
+              <li class="contact__item">
+                <img src="images/svg/mail.svg" alt="mail icon" />
+                <a href="montichello@service.com">montichello@service.com</a>
+              </li>
+              <li class="contact__item">
+                <img src="images/svg/watch.svg" alt="watch icon" />
+                <span>From 07:05AM to 19:30PM</span>
+              </li>
+            </ul>
+            <form class="contact__form">
+              <input
+                type="text"
+                class="contact__input"
+                placeholder="Mollie Medina"
+              />
+              <input type="email" class="contact__input" placeholder="Email" />
+              <button type="submit" class="button contact__button">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section">
+      <div class="container footer__container">
+        <div class="footer__content">
+          <a class="footer__logo icon logo" href="#home">
+            <img src="images/Logo.png" alt="logo" />
+          </a>
+          <div class="footer__social social">
+            <a href="#" class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a href="#" class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#x"></use>
+              </svg>
+            </a>
+            <a href="#" class="social_item">
+              <svg class="icon social_icon">
+                <use xlink:href="images/svg/sprite.svg#ig"></use>
+              </svg>
             </a>
           </div>
         </div>
+        <p class="footer__copyright">Copyrights © 2020 Montichello</p>
       </div>
-      <div class="operations__block block_2">
-        <div class="operations__copy">
-          <p class="operations__subtitle">INTERNATIONAL</p>
-          <h2 class="operations__title">COMMERCE CENTRE</h2>
-          <p class="operations__text text">
-            Successful businesses have many things in common, today we’ll look
-            at the big ‘R’ of recognition and how a digital advertising
-            network may help.
-          </p>
-          <button class="operations__button button">MORE DETAILS</button>
-          <div class="operations__location">
-            <svg class="icon operations__pin">
-              <use xlink:href="images/svg/sprite.svg#pin"></use>
-            </svg>
-            <a href="#" class="operations__location_text">Hong Kong - 1588 feet</a>
-          </div>
-        </div>
-        <img class="operations__img img_commerce-center" src="images/webp/what_we_do-2.webp"
-          alt="Hong Kong old building" />
-      </div>
-    </section>
-
-    <section class="news" id="news">
-      <div class="container news__container">
-        <h2 class="title title--white news__title">LATEST NEWS</h2>
-        <div class="news__cards swiper">
-          <div class="swiper-wrapper">
-            <article class="news__card swiper-slide">
-              <img src="images/webp/news-1.webp"
-                alt="Fragment of a modern building featuring a combination of concrete and glass architectural elements."
-                class="card__image" />
-              <div class="card__text">
-                <div class="card__title-and-description">
-                  <h3 class="card__title">
-                    SEE THE UNMATCHED BEAUTY OF THE GREAT.
-                  </h3>
-                  <p class="card__description">
-                    Free directories: directories are perfect for customers
-                    that are searching for...
-                  </p>
-                </div>
-                <div class="card__author">
-                  <img src="images/webp/author-1.webp" alt="Alja Brun" class="card__author-photo" />
-                  <div class="card__author-info">
-                    <p class="card__author-name">ALJA BRUN</p>
-                    <p class="card__date">20 Jan 2020</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="news__card swiper-slide">
-              <img src="images/webp/news-2.webp"
-                alt="Perspective view of a modern building with a grid-like facade against a clear blue sky."
-                class="card__image" />
-              <div class="card__text">
-                <div class="card__title-and-description">
-                  <h3 class="card__title">EFFECTIVE ADVERTISING POINTERS.</h3>
-                  <p class="card__description">
-                    Having a home based business is a wonderful asset to your
-                    life...
-                  </p>
-                </div>
-                <div class="card__author">
-                  <img src="images/webp/author-2.webp" alt="Dominic Freeman" class="card__author-photo" />
-                  <div class="card__author-info">
-                    <p class="card__author-name">DOMINIC FREEMAN</p>
-                    <p class="card__date">13 Dec 2019</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="news__card swiper-slide">
-              <img src="images/webp/news-3.webp"
-                alt="Close-up of a modern building with a curved, white facade and horizontal lines."
-                class="card__image" />
-              <div class="card__text">
-                <div class="card__title-and-description">
-                  <h3 class="card__title">
-                    HYPNOTIZE YOURSELF INTO THE GHOST.
-                  </h3>
-                  <p class="card__description">
-                    Free directories: directories are perfect for customers
-                    that are searching for...
-                  </p>
-                </div>
-                <div class="card__author">
-                  <img src="images/webp/author-3.webp" alt="Alice Ward" class="card__author-photo" />
-                  <div class="card__author-info">
-                    <p class="card__author-name">ALICE WARD</p>
-                    <p class="card__date">30 Nov 2019</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="news__card swiper-slide">
-              <img src="images/webp/news-4.webp"
-                alt="Modern building with a unique, wavy white facade and large windows." class="card__image" />
-              <div class="card__text">
-                <div class="card__title-and-description">
-                  <h3 class="card__title">
-                    MASTERING THE ART OF NETWORKING.
-                  </h3>
-                  <p class="card__description">
-                    Networking can open many doors for your business, but it
-                    requires skill...
-                  </p>
-                </div>
-                <div class="card__author">
-                  <img src="images/webp/author-3.webp" alt="Alice Ward" class="card__author-photo" />
-                  <div class="card__author-info">
-                    <p class="card__author-name">ALICE WARD</p>
-                    <p class="card__date">30 Nov 2019</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <article class="news__card swiper-slide">
-              <img src="images/webp/news-5.webp"
-                alt="Contemporary building with a smooth, curved facade and extensive glass windows."
-                class="card__image" />
-              <div class="card__text">
-                <div class="card__title-and-description">
-                  <h3 class="card__title">TIPS FOR YOUR PRODUCTIVITY.</h3>
-                  <p class="card__description">
-                    Increasing productivity can seem challenging, but with the
-                    right approach
-                  </p>
-                </div>
-                <div class="card__author">
-                  <img src="images/webp/author-3.webp" alt="Alice Ward" class="card__author-photo" />
-                  <div class="card__author-info">
-                    <p class="card__author-name">ALICE WARD</p>
-                    <p class="card__date">30 Nov 2019</p>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-
-    <section class="gallery container gallery__container">
-      <h2 class="title gallery__title">GALLERY</h2>
-      <div class="gallery__items">
-        <div class="gallery__item gallery__item-1">
-          <img src="images/avif/gallery-1.avif"
-            alt="Architectural detail of a modern building with a dynamic, wave-like facade design."
-            class="gallery__img" />
-        </div>
-        <div class="gallery__item gallery__item-2">
-          <img src="images/avif/gallery-2.avif"
-            alt="Close-up of a modern building featuring intricate, perforated panels and large glass windows."
-            class="gallery__img" />
-        </div>
-        <div class="gallery__item gallery__item-3">
-          <img src="images/avif/gallery-3.avif"
-            alt="Modern architectural structure with flowing, organic lines and expansive glass surfaces."
-            class="gallery__img" />
-        </div>
-        <div class="gallery__item gallery__item-4">
-          <img src="images/avif/gallery-4.avif"
-            alt="Innovative building design with a curved, layered facade and extensive use of glass."
-            class="gallery__img" />
-        </div>
-        <div class="gallery__item gallery__item-5">
-          <img src="images/avif/gallery-5.avif"
-            alt="Futuristic building with a sleek, curved design and reflective glass panels." class="gallery__img" />
-        </div>
-      </div>
-      <div class="gallery__popup">
-        <div class="gallery__popup-close">
-          <img src="images/svg/xmark-solid.svg" alt="Close" />
-        </div>
-        <img class="gallery__popup-img" src="images/webp/gallery-1.webp" />
-      </div>
-      <a href="" class="button gallery__button">SEE MORE</a>
-    </section>
-
-    <section class="map section">
-      <div class="map__container">
-        <div class="map__content">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094275!2d144.96315731531678!3d-37.81410797975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b66ed9ff7f06!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1610074187944!5m2!1sen!2sau"
-            allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section">
-      <div class="container contact__container">
-        <h2 class="title contact__title">GET IN TOUCH</h2>
-        <div class="contact__content">
-          <ul class="contact__items">
-            <li class="contact__item">
-              <img src="images/svg/location.svg" alt="location icon">
-              <a href="#">91 Nolan Extensions Suite 670</a>
-            </li>
-            <li class="contact__item">
-              <img src="images/svg/phone.svg" alt="phone icon">
-              <a href="+001 356-868-2454">+001 356-868-2454</a>
-            </li>
-            <li class="contact__item">
-              <img src="images/svg/mail.svg" alt="mail icon">
-              <a href="montichello@service.com">montichello@service.com</a>
-            </li>
-            <li class="contact__item">
-              <img src="images/svg/watch.svg" alt="watch icon">
-              <span>From 07:05AM to 19:30PM</span>
-            </li>
-          </ul>
-          <form class="contact__form">
-            <input type="text" class="contact__input" placeholder="Mollie Medina">
-            <input type="email" class="contact__input" placeholder="Email">
-            <button type="submit" class="button contact__button">Submit</button>
-          </form>
-        </div>
-    </section>
-  </main>
-
-  <footer class="footer section">
-    <div class="container footer__container">
-      <div class="footer__content">
-        <a class="footer__logo icon logo" href="#home">
-          <img src="images/Logo.png" alt="logo" />
-        </a>
-        <div class="footer__social social">
-          <a href="#" class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#fb"></use>
-            </svg>
-          </a>
-          <a href="#" class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#x"></use>
-            </svg>
-          </a>
-          <a href="#" class="social_item">
-            <svg class="icon social_icon">
-              <use xlink:href="images/svg/sprite.svg#ig"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <p class="footer__copyright">Copyrights © 2020 Montichello</p>
-    </div>
-    <img class="footer__bg" src="images/webp/footer.webp" alt="">
-  </footer>
-</body>
-
+      <img class="footer__bg" src="images/webp/footer.webp" alt="" />
+    </footer>
+  </body>
 </html>
