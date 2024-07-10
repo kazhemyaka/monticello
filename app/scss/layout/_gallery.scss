@@ -24,18 +24,18 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 13.375rem 13.375rem;
     grid-template-areas:
-      "first first second third"
-      "first first fourth fifth";
+      'first first second third'
+      'first first fourth fifth';
     gap: 0.62rem;
 
     @include max-width(48rem) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 8.4943rem 8.4943rem 8.4943rem 8.4943rem;
       grid-template-areas:
-        "first first"
-        "first first"
-        "second third"
-        "fourth fifth";
+        'first first'
+        'first first'
+        'second third'
+        'fourth fifth';
     }
   }
 
@@ -44,7 +44,7 @@
     cursor: pointer;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -56,7 +56,7 @@
     }
 
     &::after {
-      content: url("/monticello/app/images/svg/zoom.svg");
+      content: url('../../images/svg/zoom.svg');
       position: absolute;
       top: 50%;
       left: 50%;
