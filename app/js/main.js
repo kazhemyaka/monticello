@@ -19,6 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// const bannerSwiper = new Swiper('.banner__cards', {
+//   slidesPerView: 'auto',
+//   centeredSlides: true,
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: false,
+//   },
+// });
+
+const bannerSwiper = new Swiper('.banner.swiper-container', {
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  pagination: {
+    el: '.swiper-pagination-banner',
+    clickable: true,
+    direction: 'vertical',
+  },
+});
+
+const pagination = document.querySelector('.swiper-pagination-banner');
+pagination.style.position = 'absolute';
+pagination.style.right = '10px'; // Змініть на потрібне значення відступу справа
+pagination.style.top = '0';
+pagination.style.width = '80px';
+pagination.style.display = 'flex';
+pagination.style.flexDirection = 'column';
+pagination.style.justifyContent = 'center';
+pagination.style.alignItems = 'center';
+
 const newsSwiper = new Swiper('.news__cards', {
   slidesPerView: 'auto',
   centeredSlides: true,
