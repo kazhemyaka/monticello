@@ -135,3 +135,19 @@
     }
   }
 }
+
+.social_icon {
+  height: 0.9375rem;
+  width: 0.9375rem;
+  fill: var(--white-color);
+}
+
+.social_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 2.5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.4);
+}

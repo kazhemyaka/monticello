@@ -10,6 +10,10 @@
     />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/maplibre-gl@1.15.2/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
 
     <title>Monticello</title>
 
@@ -361,16 +365,7 @@
       </section>
 
       <section class="map section">
-        <div class="map__container">
-          <div class="map__content">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094275!2d144.96315731531678!3d-37.81410797975152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577b66ed9ff7f06!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1610074187944!5m2!1sen!2sau"
-              allowfullscreen=""
-              loading="lazy"
-            >
-            </iframe>
-          </div>
-        </div>
+        <div class="map__container" id="map"></div>
       </section>
       <section class="contact section" id="contact">
         <div class="container contact__container">
@@ -438,5 +433,24 @@
       </div>
       <img class="footer__bg" src="images/webp/footer.webp" alt="" />
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/maplibre-gl@1.15.2/dist/maplibre-gl.js"></script>
+    <script>
+      const apiKey = 'T944ELpNw58khu4IAqay';
+      const map = new maplibregl.Map({
+        container: 'map',
+        style: `https://api.maptiler.com/maps/streets/style.json?key=${apiKey}`,
+        center: [144.963157, -37.814107],
+        zoom: 15,
+      });
+
+      map.addControl(new maplibregl.NavigationControl());
+
+      const markerEl = document.createElement('div');
+      markerEl.className = 'custom-marker';
+
+      new maplibregl.Marker(markerEl)
+        .setLngLat([144.963157, -37.814107])
+        .addTo(map);
+    </script>
   </body>
 </html>
