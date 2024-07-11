@@ -15,7 +15,7 @@
 </div>
 <br>
 <div>
-  <h2>Features</h2>
+  <h2>Get started</h2>
   <p>To get started with this project, run</p>
   <code> npm i  </code>
   <code> gulp </code>
