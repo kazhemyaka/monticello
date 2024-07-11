@@ -2,7 +2,7 @@
 
 <p>Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind</p>
 <br>
-<img src="images/cover/cover.png" alt="cover" />
+<img src="app/images/cover/cover.png" alt="cover" />
 <br>
 <div>
   <h2>Features</h2>
@@ -19,7 +19,8 @@
 <div>
   <h2>Features</h2>
   <p>To get started with this project, run</p>
-  <code> npm i gulp </code>
+  <code> npm i  </code>
+  <code> gulp </code>
 </div>
 <br>
 <div>
