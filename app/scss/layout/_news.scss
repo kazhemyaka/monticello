@@ -160,7 +160,7 @@
       left: 0;
 
       &::after {
-        content: url('monticello/app/images/svg/arrow-1.svg');
+        content: url('../images/svg/arrow-1.svg');
       }
     }
 
@@ -168,7 +168,7 @@
       right: 0;
 
       &::after {
-        content: url('monticello/app/images/svg/arrow-2.svg');
+        content: url('../images/svg/arrow-2.svg');
       }
     }
   }
