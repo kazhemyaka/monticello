@@ -1,7 +1,5 @@
 # Project 2. Architecture - basic website + JS
 
-<p>Built with the Next.js 14 App Router, tRPC, TypeScript, Payload & Tailwind</p>
-<br>
 <img src="app/images/cover/cover.png" alt="cover" />
 <br>
 <div>
